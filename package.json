@@ -1,0 +1,37 @@
+{
+  "name": "cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Project to learn Cypress with Cucumber BDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhans-09/Cypress-Cucumber.git"
+  },
+  "keywords": [
+    "Cypress",
+    "Cucumber",
+    "BDD"
+  ],
+  "author": "Heena Hans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hhans-09/Cypress-Cucumber/issues"
+  },
+  "homepage": "https://github.com/hhans-09/Cypress-Cucumber#readme",
+  "devDependencies": {
+    "cypress": "^13.6.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "step_definitions": "cypress/e2e/",
+    "filterSpecs": true,
+    "omitFiltered": true
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.2.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0"
+  }
+}
